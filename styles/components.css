@@ -2,6 +2,71 @@
    COMPONENT STYLES
    ============================================ */
 
+/* Folder and Files */
+.folder {
+    margin-bottom: 4px;
+}
+
+.folder-header {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background 0.2s;
+}
+
+.folder-header:hover {
+    background: #3e3e42;
+}
+
+.folder-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    transition: transform 0.2s;
+}
+
+.folder.open .folder-icon {
+    transform: rotate(90deg);
+}
+
+.folder-items {
+    margin-left: 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.folder.open .folder-items {
+    max-height: 500px;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    padding: 3px 8px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 13px;
+    transition: background 0.2s;
+}
+
+.file-item:hover {
+    background: #3e3e42;
+}
+
+.file-item.active {
+    background: #094771;
+    color: #ffffff;
+}
+
+.file-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+}
+
 /* Menu Items */
 .menu-item {
     padding: 6px 12px;
