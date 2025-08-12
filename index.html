@@ -6,6 +6,8 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/components.css">
+        <link rel="stylesheet" href="styles/layout.css">
     </head>
 
     <body>
@@ -17,11 +19,30 @@
 
             <!--  Main Content Area  -->
             <div class="main-content">
+
                 <!--  Menu Bar -->
-                <div class="menu-bar" id="menuBar"></div>
+                <div class="menu-bar" id="menuBar">
+                    <div class="menu-item">File</div>
+                    <div class="menu-item">Edit</div>
+                    <div class="menu-item">Assets</div>
+                    <div class="menu-item">GameObject</div>
+                    <div class="menu-item">Component</div>
+                    <div class="menu-item">Window</div>
+                    <div class="menu-item">Help</div>
+                </div>
 
                 <!--  Dropdown Menus Container -->
-                <div id="dropDownMenus"></div>
+                <div id="dropDownMenus">
+
+                    <!--  File Menu  -->
+                    <div class="dropdown-menu" id="fileMenu">
+                        <div class="dropdown-item">New File</div>
+                        <div class="dropdown-item">Open File</div>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-item">Download CV</div>
+                    </div>
+
+                </div>
 
                 <!--  Tab Bar  -->
                 <div class="tab-bar">
