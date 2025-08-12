@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles/base.css">
-</head>
-<body>
-    <div>
-        <div>
-            <h1>Hello, World</h1>
-            <a>Lorem ipsum</a>
+        <!-- Styles -->
+        <link rel="stylesheet" href="styles/base.css">
+    </head>
+
+    <body>
+
+        <!--  Main Engine Container  -->
+        <div class="engine-container">
+            <!--  Project Hierarchy Sidebar  -->
+            <div class="project-hierarchy" id="projectHierarchy"></div>
+
+            <!--  Main Content Area  -->
+            <div class="main-content">
+                <!--  Menu Bar -->
+                <div class="menu-bar" id="menuBar"></div>
+
+                <!--  Dropdown Menus Container -->
+                <div id="dropDownMenus"></div>
+
+                <!--  Tab Bar  -->
+                <div class="tab-bar">
+                    <div class="tab active">
+                        <span>About.cs</span>
+                        <div class="tab-close"></div>
+                    </div>
+                </div>
+
+                <!--  Workspace  -->
+                <div class="workspace">
+                    <div class="editor-area" id="editorArea">
+                        <!-- Content sections will be loaded here -->
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</body>
+
+    </body>
 </html>
